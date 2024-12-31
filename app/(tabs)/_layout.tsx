@@ -46,7 +46,7 @@ const TabLayout = () => {
             height: 84,
             borderTopWidth: 1,
             paddingTop: 15,
-            borderRadius: 24
+            borderRadius: 4
           },
         }}
       >

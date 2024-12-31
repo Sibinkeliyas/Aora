@@ -26,7 +26,7 @@ const FormField = ({
 
       <View className="w-full h-16 px-4 mt-7 bg-black-100 rounded-2xl border-2  flex flex-row items-center">
         <TextInput
-          className="flex-1 text-white font-psemibold text-base w-full border-red-400 border-2 focus:border-secondary"
+          className="flex-1 text-white font-psemibold text-base w-full border-none focus:!border-none border-2 focus:outline-none  h-full"
           value={value}
           placeholder={placeHolder}
           placeholderTextColor="#7B7B8B"
@@ -36,7 +36,7 @@ const FormField = ({
 
         {title === "Password" && (
           <TouchableOpacity onPress={() => setShowPassword(!showPassword)}>
-            <Image source={!showPassword ? icons.eye : icons.eyeHide} className="w-6 h-6" resizeMode="contain" />
+            <Image source={!showPassword ? icons.eye : icons.eyeHide} className="!w-6 !h-6" resizeMode="contain" />
           </TouchableOpacity>
         )}
       </View>
